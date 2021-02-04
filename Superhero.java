@@ -4,10 +4,10 @@ public class Superhero extends Tester {
     private String ability;
     private String costume;
     private String weakness;
-    private int threatLevel;
+    private String threatLevel;
 
-
-    public Superhero(String initName, String intiAbility, String initCostume, String initWeakness, int initThreatLevel) {
+    // builds a superhero 
+    public Superhero(String initName, String intiAbility, String initCostume, String initWeakness, String initThreatLevel) {
         name = initName;
         ability = intiAbility;
         costume = initCostume;
@@ -27,7 +27,7 @@ public class Superhero extends Tester {
         return costume;
     }
 
-    public int getThreatLevel() {
+    public String getThreatLevel() {
         return threatLevel;
     }
 
@@ -35,7 +35,27 @@ public class Superhero extends Tester {
         return weakness;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setAbility(String ability) {
+        this.ability = ability;
+    }
+    public void setCostume(String costume) {
+        this.costume = costume;
+    } 
+    public void setWeakness(String weakness) {
+        this.weakness = weakness;
+    }
+     public void setThreatLevel(String threatLevel) {
+        this.threatLevel = threatLevel;
+    }
+
+
+    public String toString() {
+        return name + ability + costume + weakness + threatLevel;
+    }
 
 
 
